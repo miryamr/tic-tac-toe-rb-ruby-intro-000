@@ -39,10 +39,10 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
 #  character = "X" || character = "O"
-binding.pry
   if valid_move?(board, index)
     move(board, index, current_player(board))
     display_board(board)
+binding.pry
   else
     turn(board)
   end
