@@ -93,18 +93,6 @@ end
 
 def play(board)
   until over?(board)
-    
-    if won?(board)
-      puts "Congrats!"
-  else
-    if draw?(board)
-      puts "Cat's game!"
-    end
-  end
-end
-
-def play(board)
-  until over?(board)
       turn(board)
   end
   #now that over? is true
