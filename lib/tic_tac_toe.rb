@@ -103,7 +103,7 @@ def play(board)
     else
       puts "Congratulations O!"
     end
-#binding.pry
+binding.pry
     if draw?(board)
       puts "Cat's Game!"
     end
