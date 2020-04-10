@@ -101,9 +101,7 @@ def play(board)
   end
 #binding.pry
     if won?(board)
-      puts "Congratulations X!"
-    else
-      puts "Congratulations O!"
+      puts "Congratulations X!" || puts "Congratulations O!"
     end
     if draw?(board)
       puts "Cat's Game!"
