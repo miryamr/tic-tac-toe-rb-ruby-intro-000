@@ -102,3 +102,15 @@ def play(board)
     end
   end
 end
+def play(board)
+  until !over?(board)
+      turn(board)
+  end
+  #now that over? is true
+    if won?(board)
+      puts "Congrats!"
+  else
+      puts "Cat's game!"
+    end
+
+end
