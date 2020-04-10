@@ -70,7 +70,7 @@ def won?(board)
     board[winning_array[0]] == board[winning_array[1]] && board[winning_array[1]] == board[winning_array[2]] && position_taken?(board, winning_array[0])
   end
 end
-
+binding.pry 
 def full?(board)
   board.all? do |each_index|
 #binding.pry
@@ -103,7 +103,7 @@ def play(board)
     else
       puts "Congratulations O!"
     end
-binding.pry
+#binding.pry
     if draw?(board)
       puts "Cat's Game!"
     end
