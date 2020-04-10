@@ -69,8 +69,9 @@ def won?(board)
   WIN_COMBINATIONS.detect do |winning_array|
     board[winning_array[0]] == board[winning_array[1]] && board[winning_array[1]] == board[winning_array[2]] && position_taken?(board, winning_array[0])
   end
+  binding.pry
 end
-binding.pry
+
 
 def full?(board)
   board.all? do |each_index|
