@@ -41,7 +41,7 @@ def turn(board)
 #  character = "X" || character = "O"
 binding.pry
   if valid_move?(board, index)
-    return move(board, index, current_player)
+    return move(board, index, current_player(board))
   else
     turn(board)
   end
