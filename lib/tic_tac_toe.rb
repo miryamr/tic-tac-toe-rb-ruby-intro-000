@@ -99,12 +99,12 @@ def play(board)
 #binding.pry
       turn(board)
   end
-#binding.pry
     if won?(board)
       puts "Congratulations X!"
     else
       puts "Congratulations O!"
     end
+binding.pry
     if draw?(board)
       puts "Cat's Game!"
     end
