@@ -69,7 +69,6 @@ def won?(board)
   WIN_COMBINATIONS.detect do |winning_array|
     board[winning_array[0]] == board[winning_array[1]] && board[winning_array[1]] == board[winning_array[2]] && position_taken?(board, winning_array[0])
   end
-  binding.pry
 end
 
 
@@ -101,11 +100,9 @@ def play(board)
       turn(board)
   end
     if won?(board)
-      puts "Congratulations X!"
-    else
-      puts "Congratulations O!"
+      puts "Congratulations #{winner(board)}"
+  
     end
-#binding.pry
     if draw?(board)
       puts "Cat's Game!"
     end
