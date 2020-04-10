@@ -72,6 +72,7 @@ end
 
 def full?(board)
   board.all? do |each_index|
+binding.pry
     each_index == "X" || each_index == "O"
   end
   end
@@ -94,7 +95,7 @@ end
 
 def play(board)
   until over?(board)
-binding.pry
+#binding.pry
       turn(board)
   end
   #now that over? is true
