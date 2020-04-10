@@ -96,7 +96,6 @@ end
 
 def play(board)
   until over?(board)
-#binding.pry
       turn(board)
   end
     if won?(board)
