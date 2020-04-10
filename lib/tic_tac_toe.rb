@@ -99,7 +99,7 @@ def play(board)
 #binding.pry
       turn(board)
   end
-  #now that over? is true
+#binding.pry
     if won?(board)
       puts "Congrats!"
   else
