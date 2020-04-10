@@ -42,7 +42,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, current_player(board))
     display_board(board)
-binding.pry
+#binding.pry
   else
     turn(board)
   end
@@ -97,7 +97,7 @@ end
 
 def play(board)
   until over?(board)
-binding.pry
+#binding.pry
       turn(board)
   end
   #now that over? is true
