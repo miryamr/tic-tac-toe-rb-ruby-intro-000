@@ -40,7 +40,7 @@ def turn(board)
   index = input_to_index(user_input)
 #  character = "X" || character = "O"
   if valid_move?(board, index)
-    move(board, index, current_player(board))
+    return move(board, index, current_player(board))
     display_board(board)
 #binding.pry
   else
